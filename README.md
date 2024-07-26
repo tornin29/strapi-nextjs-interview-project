@@ -1,1 +1,63 @@
-# strapi-nextjs-interview-project
+# Full-Stack Developer Take-Home Project
+
+## Introduction
+Welcome to our take-home project! This exercise is designed to assess your skills as a full-stack developer, with a focus on working with a headless CMS and modern frontend framework. We're excited to see how you approach real-world problems like those you might encounter on our team.
+
+## Background
+At our company, we use a headless CMS (Content Management System) approach with Strapi as our backend and Next.js for our frontend. We primarily follow functional programming paradigms in our development process.
+
+This project is designed to simulate a typical day on our team and assess your ability to work with our tech stack and programming style.
+
+## Scenario
+You are a developer on the marketing team at a fast-growing tech company. The marketing team is currently using a legacy content management system (CMS) that is outdated and no longer meets the team's needs. To streamline the creation and management of marketing content, you have been tasked with setting up a new, modern CMS. This CMS will enable content editors to create, edit, and publish blogs and video content. Alongside the CMS, a front-end application is required to display the content in a user-friendly and visually appealing manner.
+
+## Project Requirements
+
+### Backend (Strapi)
+1. Set up two collection types:
+   - Blogs
+   - Videos
+2. Implement custom logic in the backend code (details in the "Custom Logic" section below)
+
+### Frontend (Next.js)
+1. Fetch data from the Strapi API
+2. Display the fetched data on the frontend (styling is not required, but feel free to add basic styling if you wish)
+
+### Custom Logic
+Implement a custom field or API endpoint in Strapi that does the following:
+- For blog posts: Calculate and store the estimated reading time based on the content length
+- For videos: Add a field to store video duration and implement a filter to get videos within a specific duration range
+
+## Bonus Points
+- Implement basic search functionality on the frontend
+- Add pagination for the content lists
+- Implement a simple caching mechanism for API requests
+
+## Submission Guidelines
+1. Fork this repository
+2. Complete the project requirements
+3. Push your changes to your forked repository
+4. Submit a pull request to this repository with your changes
+
+## Starting the Applications
+
+### Front-end
+1. Run `npm install`
+2. Start the development server with `npm run dev`
+
+### Back-end
+1. Run `npm install`
+2. Start the Strapi server with `npm run develop`
+
+## Example
+Visit https://www.pscu.com/insights to see an example of our content pages. This should give you an idea of how we structure and present our content.
+
+## Evaluation Criteria
+We will be looking at:
+- Code quality and organization
+- Problem-solving approach
+- Ability to work with functional programming concepts
+- Ability to use documentation to learn and apply concepts of the Strapi and Next.js ecosystems
+- Bonus points for additional features or optimizations
+
+Good luck! We're excited to see your solution.

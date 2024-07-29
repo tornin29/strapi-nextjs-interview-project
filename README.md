@@ -20,30 +20,33 @@ You are a developer on the marketing team at a fast-growing tech company. The ma
 
 1. Set up two collection types:
     - Blogs
+        * Required fields: Title, Slug, Publish Date, Body, Image, Read Time
     - Videos
-2. Implement custom logic in the backend code (details in the "Custom Logic" section below)
+        * Required fields: Title, Slug, Publish Date, Video, Video Description, Duration
+2. Implement custom logic in the backend code for the read time & duration fields (Hint: Strapi documentation)
+   -   For blog posts: Calculate and store the estimated reading time based on the content length
+   -   For videos: Add a field to store video duration based on the video.
 
-### Frontend (Next.js)
+### Frontend (Next.js) (styling is not required, but feel free to add basic styling if you wish)
 
 1. Fetch data from the Strapi API
-2. Display the fetched data on the frontend (styling is not required, but feel free to add basic styling if you wish)
+2. Display a list of both collections on a single page.
+3. The user should be able to click blogs and the list of blogs populate. The user should be able to click videos and the list of videos populates.
+4. The list should include the title, publish date, and read time for blogs, or duration for videos.
+5. When either a blog or video is clicked it should redirect the user to the detail page. A blog will provide the title, body, etc & a video will provide the video, description, etc.
 
-### Custom Logic
-
-Implement a custom field or API endpoint in Strapi that does the following:
-
--   For blog posts: Calculate and store the estimated reading time based on the content length
--   For videos: Add a field to store video duration and implement a filter to get videos within a specific duration range
-
-## Bonus Points
+## Bonus Points (Feel free to complete some or all of these bonuses. Have other ideas not on this list then do those as well. Think outside the box and stand out from other candidates!)
 
 -   Implement basic search functionality on the frontend
 -   Add pagination for the content lists
+-   Add filtering
 -   Implement a simple caching mechanism for API requests
+-   Utilize GraphQL
+-   Setup SEO
 
 ## Submission Guidelines
 
-1. Fork this repository
+1. Fork/clone this repository
 2. Complete the project requirements
 3. Push your changes to your forked repository
 4. Submit a pull request to this repository with your changes

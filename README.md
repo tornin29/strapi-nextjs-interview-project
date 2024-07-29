@@ -31,7 +31,7 @@ You are a developer on the marketing team at a fast-growing tech company. The ma
 
 1. Fetch data from the Strapi API
 2. Display a list of both collections on a single page.
-3. The user should be able to click blogs and the list of blogs populate. The user should be able to click videos and the list of videos populates.
+3. The user should be able to click on "Blogs" to view a list of all blog posts and click on "Videos" to view a list of all videos.
 4. The list should include the title, publish date, and read time for blogs, or duration for videos.
 5. When either a blog or video is clicked it should redirect the user to the detail page. A blog will provide the title, body, etc & a video will provide the video, description, etc.
 

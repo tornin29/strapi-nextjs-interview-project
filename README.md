@@ -23,19 +23,17 @@ You are a developer on the marketing team at a fast-growing tech company. The ma
         * Required fields: Title, Slug, Publish Date, Body, Image, Read Time
     - Videos
         * Required fields: Title, Slug, Publish Date, Video, Video Description, Duration
-2. Implement custom logic in the backend code for the read time & duration fields to auto-populate on save. (Hint: Strapi documentation)
-   -   For blog posts: Calculate and store the estimated reading time based on the content length. This should return the amount of time to read in minutes.
-   -   For videos: Calculate and store video duration based on the video. This should return the video length in minutes.
-3. Generate an API auth token for pulling the data.
+2. Implement custom logic in the backend code for the read time & duration fields (Hint: Strapi documentation)
+   -   For blog posts: Calculate and store the estimated reading time based on the content length
+   -   For videos: Add a field to store video duration based on the video.
 
 ### Frontend (Next.js) (styling is not required, but feel free to add basic styling if you wish)
 
-1. Set up environment variables for the API URL & auth token. (Make sure to remove it from git ignore so it appears in your branch/pull request)
-2. Fetch data from the Strapi API
-3. Display a list of both collections on a single page.
-4. The user should be able to click on "Blogs" to view a list of all blog posts and click on "Videos" to view a list of all videos.
-5. The list should include the title, publish date, and read time for blogs, or duration for videos.
-6. When either a blog or video is clicked it should redirect the user to the detail page. A blog will provide the title, body, etc & a video will provide the video, description, etc.
+1. Fetch data from the Strapi API
+2. Display a list of both collections on a single page.
+3. The user should be able to click on "Blogs" to view a list of all blog posts and click on "Videos" to view a list of all videos.
+4. The list should include the title, publish date, and read time for blogs, or duration for videos.
+5. When either a blog or video is clicked it should redirect the user to the detail page. A blog will provide the title, body, etc & a video will provide the video, description, etc.
 
 ## Bonus Points (Feel free to complete some or all of these bonuses. Have other ideas not on this list then do those as well. Think outside the box and stand out from other candidates!)
 
@@ -82,3 +80,13 @@ We will be looking at:
 -   Bonus points for additional features or optimizations
 
 Good luck! We're excited to see your solution.
+
+
+---------------------------------------------
+
+# How to run
+
+- Create a `.env` file and and fill the server (strapi) base url in BASE_URL field, and client base url in NEXT_PUBLIC_SERVER_URL field.
+- Start the project as described above.
+- Generate a strapi token from strapi `admin panel > settings` and fill it in STRAPI_TOKEN field.
+- A `dummy-env.txt` file is also provided in `next-fe` folder for better understanding.
